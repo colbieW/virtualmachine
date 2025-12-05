@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Basic Website</title>
-
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Hanukkah!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>🕎 Happy Hanukkah!</h1>
+        <p class="subtitle">Celebrate the Festival of Lights</p>
     </header>
 
     <main>
-        <section class="intro">
-            <h2>Hello!</h2>
-            <p>This is a simple website template using HTML, CSS, and JavaScript.</p>
-            <button id="clickBtn">Click Me</button>
-            <p id="message"></p>
+        <section class="menorah-section">
+            <h2>Light the Menorah</h2>
+            <p>Click the button below to light each candle.</p>
+            <div id="menorah">
+                <!-- 9 candles (shamash + 8 nights) -->
+                <div class="candle" data-index="0"></div>
+                <div class="candle" data-index="1"></div>
+                <div class="candle" data-index="2"></div>
+                <div class="candle" data-index="3"></div>
+                <div class="candle" data-index="4" id="shamash"></div>
+                <div class="candle" data-index="5"></div>
+                <div class="candle" data-index="6"></div>
+                <div class="candle" data-index="7"></div>
+                <div class="candle" data-index="8"></div>
+            </div>
+            <button id="lightButton">Light Next Candle</button>
+        </section>
+
+        <section class="countdown-section">
+    <h2>Countdown to Hanukkah</h2>
+    <p>The next Hanukkah begins at sundown on:</p>
+    <p class="date-display">December 14, 2025</p>
+
+    <div id="countdown">
+        <div><span id="days">0</span><br>Days</div>
+        <div><span id="hours">0</span><br>Hours</div>
+        <div><span id="minutes">0</span><br>Minutes</div>
+        <div><span id="seconds">0</span><br>Seconds</div>
+    </div>
+        </section>
+
+        <section class="info-section">
+            <h2>About Hanukkah</h2>
+            <p>
+                Hanukkah, also known as the Festival of Lights, is an eight-day Jewish holiday 
+                commemorating the rededication of the Second Temple in Jerusalem. 
+                Each night, an additional candle is lit on the menorah to honor the miracle of the oil.
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 My Website</p>
+        <p>✨ Chag Sameach! ✨</p>
     </footer>
 
-    <!-- Link to JS file -->
     <script src="scripts.js"></script>
 </body>
 </html>
